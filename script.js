@@ -20,7 +20,6 @@ const inputNumber = (number) => {
 		currentNumber += number
 	}
 };
-
 numbers.forEach((operator) => {
 	number.addEventListener("click", (event) => {
 		inputOperator(event.target.value)
