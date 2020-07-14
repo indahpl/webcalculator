@@ -56,6 +56,13 @@ const calculate = () =>{
         case "/" :
             result = prevNumber / currentNumber
             break
+        default :
+            break
+    } 
+    currentNumber = result
+    calculationOperator = '' 
+}
+
 const percentage = document.querySelector('.percentage')
 
 percentage.addEventListener('click', () => {
@@ -68,12 +75,6 @@ const percentageNumber = () => {
         return
     }
     currentNumber = currentNumber / 100
-}
-        default :
-            break
-    } 
-    currentNumber = result
-    calculationOperator = '' 
 }
 
 const equalSign = document.querySelector('.equal-sign')
