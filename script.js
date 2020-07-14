@@ -1,4 +1,4 @@
-const calculatorScreen = document.querySelectorAll('.calculator-screen')
+const calculatorScreen = document.querySelector('.calculator-screen');
 
 const updateScreen = (number) => {
 	calculatorScreen.value = number
@@ -8,7 +8,8 @@ const numbers = document.querySelectorAll(".number")
 
 numbers.forEach((number) => {
 	number.addEventListener("click", (event) => {
-		updateScreen(event.target.value)
+		console.log(number);
+		updateScreen(event.target.value);
 	})
 })
 
@@ -18,21 +19,13 @@ const inputNumber = (number) => {
 	} else {
 		currentNumber += number
 	}
-}
-
-const numbers = document.querySelectorAll(".operator")
+};
 
 numbers.forEach((operator) => {
 	number.addEventListener("click", (event) => {
 		inputOperator(event.target.value)
 	})
 })
-
-const inputOperator = (operator) => {
-	prevNumber = currentNumber
-	calculationOperator = operator
-	currentNumber = ''
-}
 
 const equalSign = document.querySelector('.equal-sign')
 
@@ -47,16 +40,16 @@ const calculate = () => {
 			result = parseFloat(prevNumber) + parseFloat(currentNumber)
 			break
 		case "-":
-			result = parseInt(prevNumber) - parseInt(currentNumber)
+			result = prevNumber - currentNumber
 			break
 		case "*":
-			result = parseInt(prevNumber) * parseInt(currentNumber)
+			result = prevNumber * currentNumber
 			break
 		case "/":
-			result = parseInt(prevNumber) / parseInt(currentNumber)
+			result = prevNumber / currentNumber
 			break
 		default:
-			return
+			break
 	}
 	currentNumber = result
 	calculationOperator = ''
