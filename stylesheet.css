@@ -41,7 +41,7 @@ button{
 }
 
 .operator, .equal-sign{
-	background-color: #FFB6C1;
+	background-color: lightpink;
 }
 
 button:hover {
@@ -49,5 +49,5 @@ button:hover {
 }
 
 .operator:hover, .equal-sign:hover {
-	background-color: #FFC0CB;
+	background-color: pink;
 }
