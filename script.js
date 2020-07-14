@@ -69,8 +69,6 @@ const persentageNumber = () => {
     currentNumber = currentNumber / 100;
 } 
 
-const equalSign = document.querySelector('.equal-sign')
-
 equalSign.addEventListener('click', () => {
 	calculate()
 	updateScreen(currentNumber)
