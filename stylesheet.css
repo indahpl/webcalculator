@@ -3,6 +3,7 @@
 	margin: 0 auto;
 	padding-top: 200px;
 	width: 400px;
+	background-image: "https://149398021.v2.pressablecdn.com/wp-content/uploads/2019/12/clouds24.jpg"
 }
 
 .calculator-screen{
@@ -40,7 +41,7 @@ button{
 }
 
 .operator, .equal-sign{
-	background-color: orange;
+	background-color: #FFB6C1;
 }
 
 button:hover {
@@ -48,5 +49,5 @@ button:hover {
 }
 
 .operator:hover, .equal-sign:hover {
-	background-color: darkorange;
+	background-color: #FFC0CB;
 }
