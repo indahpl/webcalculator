@@ -41,13 +41,13 @@ button{
 }
 
 .operator, .equal-sign{
-	background-color: lightpurple;
+	background-color: #cac3f4;
 }
 
 button:hover {
-	background-color: gray;
+	background-color: darkgray;
 }
 
 .operator:hover, .equal-sign:hover {
-	background-color: purple;
+	background-color: #bc68e0;
 }
