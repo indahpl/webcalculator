@@ -56,6 +56,9 @@ const calculate = () =>{
         case "/" :
             result = prevNumber / currentNumber
             break
+        case "%" :
+            result = currentNumber / 100
+            break
         default :
             break
     } 
