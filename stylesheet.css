@@ -28,7 +28,7 @@
 
 button{
 	height: 80px;
-	background-color: gray;
+	background-color: lightgray;
 	border: 1px solid black;
 	font-size: 32px;
 	color: #fff;
@@ -41,13 +41,13 @@ button{
 }
 
 .operator, .equal-sign{
-	background-color: lightpink;
+	background-color: #cac3f4;
 }
 
 button:hover {
-	background-color: darkgray;
+	background-color: gray;
 }
 
 .operator:hover, .equal-sign:hover {
-	background-color: pink;
+	background-color: #bc68e0;
 }
