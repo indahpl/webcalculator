@@ -18,6 +18,11 @@
 	box-sizing: border-box;
 }
 
+.p {
+	text-align: center;
+	color: black;
+}
+
 .calculator-keys{
 	width: 100%;
 }
